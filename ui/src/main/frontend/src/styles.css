@@ -1,0 +1,57 @@
+.nautilus-card-color {
+  background-color: #373a3c;
+  border: solid #8ec6f0;
+  color: aliceblue;
+}
+
+.nautilus-card-success {
+  background-color: #373a3c;
+  border: solid #06a500;
+  color: aliceblue;
+}
+.nautilus-card-warning {
+  background-color: #373a3c;
+  border: solid #ccba0a;
+  color: aliceblue;
+}
+
+.nautilus-card-danger {
+  background-color: #373a3c;
+  border: solid #cc000f;
+  color: aliceblue;
+}
+
+p {
+  color: aliceblue;
+}
+
+a {color: #8ec6f0;}
+a:hover {color: aliceblue;}
+a:visited {color: #8ec6f0;}
+
+body {
+  background-color: #373a3c;
+  color: aliceblue;
+}
+
+hr {
+  -moz-border-bottom-colors: none;
+  -moz-border-image: none;
+  -moz-border-left-colors: none;
+  -moz-border-right-colors: none;
+  -moz-border-top-colors: none;
+  border-color: #8ec6f0;
+  border-style: solid none;
+  border-width: 1px 0;
+  margin: 18px 0;
+}
+
+.table-bordered td {
+  border: 1px solid #8ec6f0;
+  /*border: 1px solid #676b6e;*/
+}
+
+.table-bordered thead td {
+  border-bottom-width: 1px;
+  background-color: #436486;
+}

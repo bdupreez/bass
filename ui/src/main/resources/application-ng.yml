@@ -1,0 +1,10 @@
+#Use this when running with ng serve and live reload... as that runs on port 4200
+bass:
+    oauth:
+        authserver: http://localhost:9999
+        callbackUrl: http://localhost:4200/login.do
+        implicitGrantUrl: /uaa/oauth/authorize?redirect_uri=__callbackUrl__&response_type=token&client_id=__clientId__&scope=__scopes__
+        clientId: bass
+        scopes: write read
+
+

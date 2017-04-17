@@ -1,0 +1,14 @@
+server:
+  port: 9999
+  contextPath: /uaa
+auth:
+  keystore:
+    path: ./auth/example.jks
+    password: ThePassword
+    keyPair: example-keystore
+  local:
+    users:
+      admin: ["ROLE_USER", "ROLE_ADMIN"]
+      test: ["ROLE_USER"]
+
+

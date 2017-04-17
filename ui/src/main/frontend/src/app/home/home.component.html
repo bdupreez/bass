@@ -1,0 +1,26 @@
+<hr>
+
+<div class="row">
+  <div class="col-md-2"></div>
+  <div class="col-md-8">
+
+    <div class="row" *ngIf="!authenticated()">
+      <div class="alert alert-warning">User not logged in.</div>
+    </div>
+    <div *ngIf="authenticated()">
+      <div *ngIf="isUser()" class="alert alert-info">Verified User</div>
+      <div class="alert alert-success"> Logged In with Role: {{roles()}}</div>
+    </div>
+
+  </div>
+  <div class="col-md-8"></div>
+</div>
+<hr>
+<div class="text-white">
+  <p>
+    <small>
+      B.A.S.S -  Boot Angular Secure Starter
+    </small>
+  </p>
+
+</div>

@@ -1,0 +1,15 @@
+server:
+    port: 9090
+logging:
+    level:
+        org.springframework: INFO
+
+bass:
+    oauth:
+        authserver: http://localhost:9999
+        callbackUrl: http://localhost:9090/login.do
+        implicitGrantUrl: /uaa/oauth/authorize?redirect_uri=__callbackUrl__&response_type=token&client_id=__clientId__&scope=__scopes__
+        clientId: bass
+        scopes: write
+
+resourceServerUrl: http://localhost:9000/resource/

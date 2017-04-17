@@ -1,0 +1,39 @@
+<hr>
+<div class="row">
+  <div class="col-md-4"></div>
+  <div class="col-md-4">
+    <div class="card card-inverse nautilus-card-color">
+      <div class="card-block">
+        <h5 class="card-title">Sign in</h5>
+        <p class="text-red" *ngIf="errorLogin">
+          <i class="fa fa-exclamation-triangle" aria-hidden="true"> </i>
+          An error occurred while trying to login!
+        </p>
+        <form (ngSubmit)="onSignin()" [formGroup]="loginForm">
+          <div class="form-group has-feedback">
+            <input type="text" class="form-control" id="username" formControlName="username" placeholder="Username"
+                   autofocus="">
+            <span class="fa fa-user form-control-feedback"></span>
+          </div>
+          <div class="form-group has-feedback">
+            <input type="password" class="form-control" id="password" formControlName="password" placeholder="Password">
+            <span class="fa fa-lock form-control-feedback"></span>
+          </div>
+          <div class="row">
+            <div class="col-xs-8">
+            </div>
+            <div class="col-xs-4">
+              <button type="submit" class="btn btn-primary" [disabled]="!loginForm.valid">Sign In
+              </button>
+            </div>
+          </div>
+
+        </form>
+      </div>
+    </div>
+
+    <div class="col-md-4"></div>
+
+  </div>
+</div>
+<hr>

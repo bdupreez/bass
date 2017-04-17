@@ -1,0 +1,20 @@
+server:
+    port: 9000
+    contextPath: /resource
+
+security:
+    oauth2:
+        resource:
+            jwt:
+                keyValue: |
+                  -----BEGIN PUBLIC KEY-----
+                  MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAk6qmqS60bwW1sI7yGlVj
+                  cijNzBNHyqGxYT13dYYQ7EAQkDGzhlPvdSB8lxmMiEaM1y1vy6LBPvPQD2YGGlK5
+                  RWbyvhMv1I/XfCz/vCGcRoLHrh752LyuB3jdkDlCK4cTR+lZktf6yvnpszfbRg8G
+                  zHlvD8ajbF14I0NRTyg9JQ+BzwOTJ6HAsxUSl5BCgjRL2KP+EecdOGn8wd9mYco+
+                  39UVoX6n6JPI6RQvGMzNaJWS+TYl5zJ9K8DBlLanECxAZwzfOQEV9++zjykJvCkn
+                  lhv1dByzys8Yd1gn76ier+Yk8MoTVX6H2qNkuZ9TYxnddZZHp/quV1TSX9M6rbpQ
+                  AwIDAQAB
+                  -----END PUBLIC KEY-----
+
+
